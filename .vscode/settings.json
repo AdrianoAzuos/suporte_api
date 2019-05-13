@@ -1,3 +1,10 @@
 {
-    "python.pythonPath": "C:\\Users\\Adriano\\Anaconda3\\envs\\suporteapi\\python.exe"
+    "python.pythonPath": "C:\\Users\\Adriano\\Anaconda3\\envs\\suporteapi\\python.exe",
+    "sqltools.connections": [
+        {
+            "database": "C:\\Users\\Adriano\\OneDrive\\projetos\\suporte\\api\\suporte_api\\db.sqlite3",
+            "dialect": "SQLite",
+            "name": "django"
+        }
+    ]
 }

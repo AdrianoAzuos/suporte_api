@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls import include
+from rest_framework import routers
+from clientes.api.viewsets import TipoViewSet
+
+router = routers.DefaultRouter()
+router.register(r'clientes-tipo', TipoViewSet)
 
 urlpatterns = [
+    path('', include(router.urls)),
     path('admin/', admin.site.urls),
     path('api/v1/', include('api.urls')),
     path('api/v1/', include('users.urls')),
